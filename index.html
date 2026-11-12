@@ -3,65 +3,1040 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Landing Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ApexDigital | Modern Responsive Digital Product & Agency Landing Page</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ApexDigital is a modern, responsive digital studio delivering high-performance websites, custom web applications, UI/UX design, and SEO solutions." />
+  <meta name="keywords" content="responsive landing page, web development, UI/UX design, mobile apps, digital marketing, SEO, modern frontend" />
+  <meta name="author" content="Yash Chaudhari" />
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="ApexDigital | Modern Responsive Landing Page" />
+  <meta property="og:description" content="High-performance, modern, and fully responsive digital agency landing page built with pure HTML5, CSS3, and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/yashchaudhari372-lab/responsive-landing-page" />
+  <meta name="theme-color" content="#4f46e5" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234f46e5'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- ==============================================
+       HEADER / NAVIGATION BAR
+       ============================================== -->
+  <header class="site-header" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="ApexDigital Home">
+        <span class="logo-icon">
+          <i class="fa-solid fa-cube"></i>
+        </span>
+        <span class="logo-text">Apex<span class="gradient-text">Digital</span></span>
+      </a>
 
-  <!-- Header -->
-  <header id="home">
-    <h1>Welcome to Our Website</h1>
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Navbar Action Controls -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button id="menu-toggle" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="content-box">
-      <h1>About Us</h1>
-      <p>
-        Our mission is to create innovative and accessible learning solutions
-        that empower people of all ages and backgrounds to achieve their full
-        potential. We believe in creativity, collaboration, and continuous
-        growth.
-      </p>
-    </div>
-  </section>
+  <main>
+    <!-- ==============================================
+         HERO SECTION
+         ============================================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="content-box">
-      <h1>Our Services</h1>
-      <ul class="services-list">
-        <li>Web Design & Development</li>
-        <li>Mobile App Development</li>
-        <li>Digital Marketing & SEO</li>
-        <li>Career Guidance Systems</li>
-      </ul>
-    </div>
-  </section>
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge animate-on-scroll">
+            <span class="badge-dot"></span>
+            <span class="badge-text">🚀 Next-Gen Digital Studio 2.0 is Live</span>
+          </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="content-box">
-      <h1>Contact Us</h1>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+          <h1 class="hero-title animate-on-scroll">
+            Build, Scale &amp; Accelerate Your <span class="gradient-text">Digital Vision</span>
+          </h1>
 
+          <p class="hero-subtitle animate-on-scroll">
+            We partner with visionary startups and industry leaders to design, engineer, and deploy high-converting web applications, responsive experiences, and digital brands that dominate the market.
+          </p>
+
+          <div class="hero-cta-group animate-on-scroll">
+            <a href="#services" class="btn btn-primary btn-lg">
+              <span>Explore Services</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Book Strategy Call</span>
+            </a>
+          </div>
+
+          <!-- Trust Proof -->
+          <div class="hero-trust animate-on-scroll">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Client Avatar 1" class="avatar" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Client Avatar 2" class="avatar" />
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Client Avatar 3" class="avatar" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Client Avatar 4" class="avatar" />
+            </div>
+            <div class="trust-text">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p><strong>4.9/5 Rating</strong> from 350+ worldwide clients</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Graphic / Interactive Dashboard Card -->
+        <div class="hero-visual animate-on-scroll">
+          <div class="hero-card-wrapper">
+            <div class="hero-glass-card main-card">
+              <div class="card-top-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="card-title-bar">apex-analytics-dashboard.live</span>
+              </div>
+              <div class="card-body">
+                <div class="metric-row">
+                  <div class="metric-box">
+                    <span class="metric-label">Monthly Growth</span>
+                    <span class="metric-value">+284%</span>
+                    <span class="metric-sub text-success"><i class="fa-solid fa-arrow-trend-up"></i> vs last quarter</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-label">Avg. Page Speed</span>
+                    <span class="metric-value">0.42s</span>
+                    <span class="metric-sub text-success"><i class="fa-solid fa-bolt"></i> 99/100 Score</span>
+                  </div>
+                </div>
+
+                <div class="code-preview">
+                  <pre><code><span class="token-kw">const</span> <span class="token-var">project</span> = <span class="token-kw">new</span> <span class="token-cls">ApexDigitalExperience</span>({
+  performance: <span class="token-str">"ultra-fast"</span>,
+  responsive: <span class="token-bool">true</span>,
+  conversions: <span class="token-str">"maximized"</span>
+});
+<span class="token-var">project</span>.<span class="token-fn">launch</span>(); <span class="token-comment">// 🚀 100% Ready</span></code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="floating-badge badge-left">
+              <div class="icon-circle icon-success">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <strong>99.9% Uptime</strong>
+                <span>Enterprise SLA</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-right">
+              <div class="icon-circle icon-primary">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <div>
+                <strong>3.8x ROI</strong>
+                <span>Avg. Client Uplift</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         CLIENT / PARTNER LOGOS
+         ============================================== -->
+    <section class="logos-strip" aria-label="Trusted Partners">
+      <div class="container">
+        <p class="logos-headline">TRUSTED BY INNOVATIVE TEAMS &amp; GLOBAL BRANDS</p>
+        <div class="logos-grid">
+          <div class="logo-item"><i class="fa-brands fa-google"></i> CloudSuite</div>
+          <div class="logo-item"><i class="fa-brands fa-stripe"></i> PayFlow</div>
+          <div class="logo-item"><i class="fa-brands fa-github"></i> DevMatrix</div>
+          <div class="logo-item"><i class="fa-brands fa-slack"></i> ConnectIQ</div>
+          <div class="logo-item"><i class="fa-brands fa-spotify"></i> PulseSound</div>
+          <div class="logo-item"><i class="fa-brands fa-aws"></i> ScaleHost</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         FEATURES SECTION
+         ============================================== -->
+    <section id="features" class="section features-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">Core Advantages</span>
+          <h2 class="section-title">Engineered For <span class="gradient-text">Speed, Scale &amp; Impact</span></h2>
+          <p class="section-desc">
+            We don't just build templates; we craft conversion-focused digital infrastructure tailored to your exact business objectives.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="feature-title">Ultra-Fast Performance</h3>
+            <p class="feature-desc">
+              Optimized assets, minimal bundle footprint, and efficient rendering guarantee top-tier 99+ Google PageSpeed and Core Web Vitals scores.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">Sub-second Load</span>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="feature-title">Adaptive Fluid Responsiveness</h3>
+            <p class="feature-desc">
+              Pixel-perfect ergonomics across smartphones, tablets, laptops, and ultra-wide desktop monitors without layout shifts.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">320px to 4K Ready</span>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="feature-title">Conversion-Driven UX/UI</h3>
+            <p class="feature-desc">
+              User psychology-backed wireframes, intuitive information hierarchy, and clear call-to-actions that turn visits into conversions.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">High Conversion</span>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-shield-check"></i>
+            </div>
+            <h3 class="feature-title">Modern Web Standards</h3>
+            <p class="feature-desc">
+              Semantic HTML5, CSS custom properties, modular JavaScript, and strict WCAG accessibility (a11y) compliance for all users.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">Accessible &amp; Clean</span>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3 class="feature-title">SEO &amp; Discoverability</h3>
+            <p class="feature-desc">
+              Rich OpenGraph metadata, schema markup, structured breadcrumbs, and lightning load speeds to rank higher on Google search results.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">Organic Traffic</span>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="feature-title">24/7 Dedicated Support</h3>
+            <p class="feature-desc">
+              Continuous monitoring, proactive performance maintenance, and dedicated technical support whenever you need assistance.
+            </p>
+            <div class="feature-footer">
+              <span class="feature-pill">Always Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SERVICES SECTION
+         ============================================== -->
+    <section id="services" class="section services-section bg-alt">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">Comprehensive <span class="gradient-text">Digital Services</span></h2>
+          <p class="section-desc">
+            End-to-end digital solutions designed to elevate your brand identity and drive measurable business outcomes.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="service-num">01</span>
+            </div>
+            <h3 class="service-title">Web Design &amp; Development</h3>
+            <p class="service-desc">
+              Bespoke landing pages, marketing websites, and corporate web portals built for maximum speed, security, and brand differentiation.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Custom UI/UX Design &amp; Prototypes</li>
+              <li><i class="fa-solid fa-check"></i> Clean, Semantic, Maintainable Code</li>
+              <li><i class="fa-solid fa-check"></i> CMS Integration &amp; Headless Architecture</li>
+              <li><i class="fa-solid fa-check"></i> Cross-Browser &amp; Multi-Device Testing</li>
+            </ul>
+            <div class="service-tags">
+              <span class="tag">HTML5/CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <span class="service-num">02</span>
+            </div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-desc">
+              Cross-platform mobile applications engineered for smooth performance, delightful touch interactions, and offline capability.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> iOS &amp; Android Cross-Platform Apps</li>
+              <li><i class="fa-solid fa-check"></i> Progressive Web Applications (PWA)</li>
+              <li><i class="fa-solid fa-check"></i> Real-time Push Notifications</li>
+              <li><i class="fa-solid fa-check"></i> App Store Deployment &amp; Optimization</li>
+            </ul>
+            <div class="service-tags">
+              <span class="tag">PWA</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Flutter</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <span class="service-num">03</span>
+            </div>
+            <h3 class="service-title">Digital Marketing &amp; SEO</h3>
+            <p class="service-desc">
+              Data-backed marketing funnels, search engine optimization, and targeted paid campaigns designed to acquire customers efficiently.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Technical &amp; On-Page SEO Audits</li>
+              <li><i class="fa-solid fa-check"></i> Conversion Rate Optimization (CRO)</li>
+              <li><i class="fa-solid fa-check"></i> Analytics &amp; Conversion Tracking</li>
+              <li><i class="fa-solid fa-check"></i> Targeted Performance Ad Funnels</li>
+            </ul>
+            <div class="service-tags">
+              <span class="tag">SEO Strategy</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">PPC</span>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-header">
+              <div class="service-icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <span class="service-num">04</span>
+            </div>
+            <h3 class="service-title">Career &amp; Tech Systems</h3>
+            <p class="service-desc">
+              Interactive career guidance platforms, talent matching algorithms, and enterprise workforce software built to empower modern talent.
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> Interactive Assessment Modules</li>
+              <li><i class="fa-solid fa-check"></i> Intelligent Skill Mapping Portals</li>
+              <li><i class="fa-solid fa-check"></i> Automated Workflow Orchestration</li>
+              <li><i class="fa-solid fa-check"></i> Real-time Progress Tracking</li>
+            </ul>
+            <div class="service-tags">
+              <span class="tag">EdTech</span>
+              <span class="tag">Cloud APIs</span>
+              <span class="tag">SaaS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         ABOUT US SECTION
+         ============================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Visual & Highlights -->
+          <div class="about-visual animate-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="ApexDigital Creative Team collaborating" class="about-img" />
+              <div class="experience-badge">
+                <span class="badge-number">5+</span>
+                <span class="badge-label">Years of Digital Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Content & Metrics -->
+          <div class="about-content animate-on-scroll">
+            <span class="section-tag">About ApexDigital</span>
+            <h2 class="section-title">We Turn Bold Ideas Into <span class="gradient-text">Exceptional Reality</span></h2>
+            <p class="about-paragraph">
+              Our mission is to create innovative, accessible, and high-performance digital solutions that empower businesses and creators of all backgrounds to unlock their full potential.
+            </p>
+            <p class="about-paragraph">
+              We believe great software is born at the intersection of stunning aesthetics, rock-solid engineering, and relentless user focus. Every line of code and pixel we craft is driven by measurable impact.
+            </p>
+
+            <!-- Value Bullets -->
+            <div class="about-values">
+              <div class="value-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Human-Centric Approach:</strong>
+                  <span>Prioritizing intuitive user journeys and accessibility.</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Agile &amp; Transparent:</strong>
+                  <span>Rapid sprints, transparent milestones, and zero technical debt.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats Counters -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-value"><span class="counter" data-target="250">0</span>+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value"><span class="counter" data-target="99">0</span>%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value"><span class="counter" data-target="15">0</span>+</div>
+                <div class="stat-label">Industry Awards</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value"><span class="counter" data-target="24">0</span>/7</div>
+                <div class="stat-label">Technical Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PRICING SECTION
+         ============================================== -->
+    <section id="pricing" class="section pricing-section bg-alt">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">Flexible Investment</span>
+          <h2 class="section-title">Transparent Pricing For <span class="gradient-text">Every Ambition</span></h2>
+          <p class="section-desc">
+            No surprise invoices, hidden extras, or lock-in contracts. Choose the plan that aligns with your growth stage.
+          </p>
+
+          <!-- Billing Period Switcher -->
+          <div class="billing-switcher">
+            <span class="billing-label" id="monthly-label">Monthly</span>
+            <label class="switch" for="billing-toggle">
+              <input type="checkbox" id="billing-toggle" aria-labelledby="monthly-label yearly-label" />
+              <span class="slider round"></span>
+            </label>
+            <span class="billing-label" id="yearly-label">
+              Yearly <span class="discount-badge">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1: Starter -->
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-header">
+              <h3 class="plan-name">Launchpad</h3>
+              <p class="plan-desc">Perfect for early-stage startups and personal brand websites.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="29" data-yearly="24">29</span>
+                <span class="period">/month</span>
+              </div>
+              <span class="billing-note">Billed annually ($288/yr) or $29 monthly</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> 1 Responsive High-Converting Landing Page</li>
+              <li><i class="fa-solid fa-check"></i> Full Mobile &amp; Tablet Optimization</li>
+              <li><i class="fa-solid fa-check"></i> Contact Form with Email Notifications</li>
+              <li><i class="fa-solid fa-check"></i> Standard Technical SEO Setup</li>
+              <li class="unavailable"><i class="fa-solid fa-xmark"></i> Custom CMS Integration</li>
+              <li class="unavailable"><i class="fa-solid fa-xmark"></i> Priority 24/7 SLA Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+
+          <!-- Plan 2: Pro (Highlighted) -->
+          <div class="pricing-card popular animate-on-scroll">
+            <div class="popular-ribbon">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="plan-name">Growth Studio</h3>
+              <p class="plan-desc">Ideal for expanding businesses wanting rapid scaling and conversions.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="79" data-yearly="64">79</span>
+                <span class="period">/month</span>
+              </div>
+              <span class="billing-note">Billed annually ($768/yr) or $79 monthly</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> Up to 5 Fully Responsive Custom Pages</li>
+              <li><i class="fa-solid fa-check"></i> Advanced Animations &amp; Micro-Interactions</li>
+              <li><i class="fa-solid fa-check"></i> Headless CMS or Dynamic Blog Integration</li>
+              <li><i class="fa-solid fa-check"></i> Conversion Rate &amp; Analytics Tracking</li>
+              <li><i class="fa-solid fa-check"></i> Google Core Web Vitals 95+ Guarantee</li>
+              <li><i class="fa-solid fa-check"></i> Priority Email &amp; Chat Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Start Scale Plan</a>
+          </div>
+
+          <!-- Plan 3: Enterprise -->
+          <div class="pricing-card animate-on-scroll">
+            <div class="pricing-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-desc">For high-traffic platforms requiring bespoke architecture.</p>
+              <div class="price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="199" data-yearly="159">199</span>
+                <span class="period">/month</span>
+              </div>
+              <span class="billing-note">Billed annually ($1,908/yr) or $199 monthly</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> Unlimited Custom Pages &amp; Web Portals</li>
+              <li><i class="fa-solid fa-check"></i> Full-Stack APIs &amp; Database Engineering</li>
+              <li><i class="fa-solid fa-check"></i> Custom Auth &amp; Third-Party Integrations</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated Solutions Architect</li>
+              <li><i class="fa-solid fa-check"></i> 99.95% Uptime SLA Guarantee</li>
+              <li><i class="fa-solid fa-check"></i> 24/7 VIP Phone &amp; Dedicated Slack Channel</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Contact Enterprise</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         TESTIMONIALS SECTION
+         ============================================== -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">Client Feedback</span>
+          <h2 class="section-title">Loved by Founders &amp; <span class="gradient-text">Product Leaders</span></h2>
+          <p class="section-desc">
+            Discover how ApexDigital has transformed digital presence and accelerated revenue for our partners.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Working with this team was a game-changer. Our landing page conversion rate spiked by 180% within two weeks of launching the redesigned responsive interface. Clean code and breathtaking aesthetics!"
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins" class="author-img" />
+              <div>
+                <h4 class="author-name">Sarah Jenkins</h4>
+                <p class="author-role">Founder, PulseMedia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "The performance optimization alone was worth every penny. Our Google PageSpeed jumped from 48 to 99, and mobile user bounce rate dropped in half. They delivered ahead of schedule."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="author-img" />
+              <div>
+                <h4 class="author-name">Marcus Vance</h4>
+                <p class="author-role">Head of Product, SaaSMatrix</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Their attention to micro-interactions, dark mode transition, and accessibility made our application stand out in a crowded market. Truly world-class frontend execution."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="author-img" />
+              <div>
+                <h4 class="author-name">Elena Rostova</h4>
+                <p class="author-role">VP of Marketing, HorizonCloud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         FAQ ACCORDION SECTION
+         ============================================== -->
+    <section id="faq" class="section faq-section bg-alt">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-desc">
+            Everything you need to know about our workflow, technology stack, timelines, and deliverables.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long does it take to deliver a custom responsive landing page?</span>
+              <i class="fa-solid fa-chevron-down faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Standard high-converting landing pages are typically engineered and delivered within 1 to 2 weeks. Comprehensive multi-page web applications or custom SaaS dashboards generally require 3 to 6 weeks depending on custom feature requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is the landing page optimized for all smartphones and tablets?</span>
+              <i class="fa-solid fa-chevron-down faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, absolutely! We adopt a mobile-first responsive architecture. We thoroughly test on iOS, Android, tablets, laptops, and ultra-wide desktop monitors to guarantee fluid layouts and high touch-target usability.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I customize the colors, typography, and content easily?</span>
+              <i class="fa-solid fa-chevron-down faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! The codebase is built with CSS custom properties (variables) defined at the <code>:root</code> level. You can easily modify brand colors, font families, margins, and dark/light mode themes in seconds.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you provide post-launch maintenance and technical support?</span>
+              <i class="fa-solid fa-chevron-down faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Every project includes 30 days of complimentary post-launch support and performance warranty. We also offer ongoing monthly maintenance retainer packages for continuous updates and monitoring.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I deploy this repository to GitHub Pages, Vercel, or Netlify?</span>
+              <i class="fa-solid fa-chevron-down faq-arrow"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Because this project is written in pure vanilla HTML5, CSS3, and modern JavaScript with zero bulky build dependencies, it can be deployed in 60 seconds to GitHub Pages, Netlify, or Vercel simply by connecting your Git repository!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         CALL TO ACTION (CTA) BANNER
+         ============================================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card animate-on-scroll">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Elevate Your Digital Footprint?</h2>
+            <p class="cta-desc">
+              Join hundreds of forward-thinking businesses. Let's discuss your vision and build a high-performing digital product that drives real revenue.
+            </p>
+            <div class="cta-actions">
+              <a href="#contact" class="btn btn-white btn-lg">Start Your Project Today</a>
+              <a href="mailto:hello@apexdigital.com" class="btn btn-outline-white btn-lg">Email Direct Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         CONTACT US SECTION
+         ============================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch <span class="gradient-text">With Us</span></h2>
+          <p class="section-desc">
+            Have a project in mind, need a quote, or want to collaborate? Fill out the form or reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Channels & Info -->
+          <div class="contact-info animate-on-scroll">
+            <h3 class="info-title">Let's build something remarkable together</h3>
+            <p class="info-desc">
+              We respond to all project inquiries within 24 hours. Let's discuss your timeline, scope, and technical roadmap.
+            </p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:yashchaudhari372@gmail.com" class="info-link">yashchaudhari372@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="info-label">Call / WhatsApp</span>
+                  <a href="tel:+15551234567" class="info-link">+1 (555) 123-4567</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="info-label">Headquarters</span>
+                  <span class="info-text">Silicon Valley &amp; Remote Worldwide</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <span class="info-label">Working Hours</span>
+                  <span class="info-text">Mon – Fri: 9:00 AM – 6:00 PM EST</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Handles -->
+            <div class="social-links-wrapper">
+              <span class="social-label">Follow Our Work:</span>
+              <div class="social-links">
+                <a href="https://github.com/yashchaudhari372-lab" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter Profile">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Dribbble Portfolio">
+                  <i class="fa-brands fa-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-wrapper animate-on-scroll">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+                  </div>
+                  <span class="form-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+                  </div>
+                  <span class="form-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-service">Service Interested In</label>
+                  <div class="input-with-icon select-wrapper">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <select id="contact-service" name="service">
+                      <option value="web-development">Web Design &amp; Development</option>
+                      <option value="mobile-apps">Mobile App Engineering</option>
+                      <option value="seo-marketing">Digital Marketing &amp; SEO</option>
+                      <option value="career-systems">Career Guidance Systems</option>
+                      <option value="custom-inquiry">Other Custom Solution</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-budget">Estimated Budget</label>
+                  <div class="input-with-icon select-wrapper">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <select id="contact-budget" name="budget">
+                      <option value="1k-3k">$1,000 – $3,000</option>
+                      <option value="3k-10k" selected>$3,000 – $10,000</option>
+                      <option value="10k-25k">$10,000 – $25,000</option>
+                      <option value="25k+">$25,000+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Project Overview <span class="required">*</span></label>
+                <div class="input-with-icon textarea-wrapper">
+                  <i class="fa-solid fa-message"></i>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your goals, current challenges, and project timeline..." required></textarea>
+                </div>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block btn-lg">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer Brand Column -->
+        <div class="footer-col footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+            <span class="logo-text">Apex<span class="gradient-text">Digital</span></span>
+          </a>
+          <p class="footer-bio">
+            Crafting world-class responsive landing pages, high-converting digital products, and high-performance web applications that scale effortlessly.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/yashchaudhari372-lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Studio</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div class="footer-col">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Web Design &amp; Dev</a></li>
+            <li><a href="#services">Mobile Applications</a></li>
+            <li><a href="#services">SEO &amp; Analytics</a></li>
+            <li><a href="#services">UI/UX Prototyping</a></li>
+            <li><a href="#services">Career Guidance Tech</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col footer-newsletter">
+          <h4 class="footer-title">Stay Updated</h4>
+          <p class="newsletter-desc">Subscribe to get monthly digital design tips, case studies, and engineering updates.</p>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <div class="newsletter-input-box">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+              <button type="submit" aria-label="Subscribe to newsletter"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>ApexDigital</strong>. Developed with passion by <a href="https://github.com/yashchaudhari372-lab" target="_blank" rel="noopener noreferrer">Yash Chaudhari</a>. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="#home">Privacy Policy</a>
+          <span class="sep">•</span>
+          <a href="#home">Terms of Service</a>
+          <span class="sep">•</span>
+          <a href="#home">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       FLOATING BACK-TO-TOP BUTTON
+       ============================================== -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==============================================
+       TOAST NOTIFICATION COMPONENT
+       ============================================== -->
+  <div id="toast" class="toast-container" role="status" aria-live="polite">
+    <div class="toast-icon">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="toast-content">
+      <h5 class="toast-title" id="toast-title">Message Sent!</h5>
+      <p class="toast-message" id="toast-message">Thank you. We will get back to you shortly.</p>
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Close notification">&times;</button>
+  </div>
+
+  <!-- JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
